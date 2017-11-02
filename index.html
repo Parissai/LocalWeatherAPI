@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>What's the Weather Like?</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main" class="container">
+        <h1>Local Weather App</h1>
+        <div id="place"></div>
+
+
+        <div id="temp">
+            <div id="temperature"></div>
+            <div class="btn-group" data-toggle="buttons">
+                <label id="celcius" class="btn btn-primary active">
+                     <input class="radio-btn" type="radio" name="temp" autocomplete="off" checked> &deg;C
+                </label>
+                <label class="btn btn-primary" id="farenheit">
+                    <input class="radio-btn" type="radio" name="temp" autocomplete="off"> &deg;F
+                </label>
+
+            </div>
+        </div>
+
+        <div id="air">
+            <img id="sky">
+        </div>
+        <div id="wind"></div>
+    </div>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
